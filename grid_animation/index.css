@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 5% auto;
+  transition: all 500ms ease-in-out;
+}
+
+.wrapper:has(.left:hover) {
+  grid-template-columns: 14% auto;
+}
+
+.left,
+.right {
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.left {
+  background-color: burlywood;
+}
+.right {
+  border: 8rem solid crimson;
+  background-color: orangered;
+}
